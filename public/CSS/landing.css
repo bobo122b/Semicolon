@@ -31,9 +31,17 @@ main {
     grid-column: 1/-1;
 }
 
+.more__grid {
+    display: grid;
+    width: 100%;
+    grid-column: 1/3;
+    grid-gap: 1.5rem;
+    grid-template-columns: 50% 50%;
+}
+
 .fade-in {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: 0.9s ease-in;
 }
 
 .fade-in.appear {

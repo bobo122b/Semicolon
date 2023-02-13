@@ -1,6 +1,7 @@
 const desktopNav = document.getElementById("main-nav__desktop");
 
 const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
 
 window.onscroll = () => {
     if (document.body.scrollTop >= 450 || document.documentElement.scrollTop >= 450) {
@@ -22,10 +23,9 @@ const appearOptions = {
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
-            return;
+            entry.target.classList.remove('appear');
         } else {
             entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
         }
     });
 },
@@ -33,4 +33,8 @@ appearOptions);
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
+})
+
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider);
 })
