@@ -53,10 +53,10 @@ body {
     margin-left: 0.5rem;
     text-decoration: none;
     color: var(--font-color);
-    transition: color 0.4s;
+    transition: color 0.6s;
 }
 
 .main-nav__item-link:hover {
-    text-decoration: underline;
     color: var(--Edges-color);
+    text-shadow: 0px 0px 5px var(--Edges-color);
 }
