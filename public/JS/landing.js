@@ -4,7 +4,7 @@ const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
 window.onscroll = () => {
-    if (document.body.scrollTop >= 450 || document.documentElement.scrollTop >= 450) {
+    if (document.body.scrollTop >= 500 || document.documentElement.scrollTop >= 500) {
         desktopNav.classList.remove("nav-colored");
         desktopNav.classList.add("nav-transparent");
         desktopNav.style.boxShadow = "0px 0px 0px 0px black";
@@ -17,7 +17,7 @@ window.onscroll = () => {
 
 const appearOptions = {
     threshold: 1,
-    rootMargin: "0px 0px -200px 0px"
+    rootMargin: "100px 0px 0px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
