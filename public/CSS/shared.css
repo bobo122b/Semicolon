@@ -9,26 +9,32 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--background-color);
+    background: black;
     font-family: 'Roboto Condensed', sans-serif;
-}
-
-header {
-    background: var(--font-color);
-    width: 100%;
-    position: fixed;
+    height: 200vh;
 }
 
 .main-nav {
-    width: 95%;
     max-height: 4rem;
+    width: 100%;
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
     font-weight: 800;
+    transition: 0.3s ease-in-out;
+    box-shadow: 1px 2px 2px 1px black;
+}
+
+.nav-colored {
+    background: var(--background-color);
+}
+
+.nav-transparent {
+    background: transparent;
 }
 
 .main-nav__logo {
@@ -40,14 +46,17 @@ header {
     display: flex;
     list-style: none;
     justify-content: space-around;
+    margin-right: 0.8rem;
 }
 
-.main-nav__item, .main-nav__item a {
+.main-nav__item, .main-nav__item-link {
     margin-left: 0.5rem;
     text-decoration: none;
-    color: var(--Edges-color);
+    color: var(--font-color);
+    transition: color 0.4s;
 }
 
-.main-nav__item a:hover {
+.main-nav__item-link:hover {
     text-decoration: underline;
+    color: var(--Edges-color);
 }
