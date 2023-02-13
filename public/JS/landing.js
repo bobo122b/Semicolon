@@ -3,7 +3,7 @@ const desktopNav = document.getElementById("main-nav__desktop");
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
-window.onscroll = () => {
+window.addEventListener("scroll", () => {
     if (document.body.scrollTop >= 500 || document.documentElement.scrollTop >= 500) {
         desktopNav.classList.remove("nav-colored");
         desktopNav.classList.add("nav-transparent");
@@ -13,11 +13,11 @@ window.onscroll = () => {
         desktopNav.classList.add("nav-colored");
         desktopNav.style.boxShadow = "";
     }
-}
+});
 
 const appearOptions = {
-    threshold: 1,
-    rootMargin: "100px 0px 0px 0px"
+    threshold: 0,
+    rootMargin: "800px 0px 0px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {

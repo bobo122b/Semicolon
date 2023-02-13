@@ -70,11 +70,21 @@ body {
     display: none;
 }
 
+.mob-nav__item-list {
+    display: none;
+}
+
 .modal {
     display: none;
 }
 
 @media (max-width: 40rem) {
+    body {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 5rem 55vh;
+    }
+
     .main-nav__item-list {
         display: none;
     }
@@ -85,7 +95,7 @@ body {
         height: 4rem;
         margin-right: 1rem;
         background: transparent;
-        border: 2px solid var(--Edges-color);
+        border: 2px solid var(--background-color);
         border-radius: 15px;
         cursor: pointer;
         z-index: 1000;
@@ -109,7 +119,21 @@ body {
         height: 100vh;
         display: block;
         grid-column: 2/-1;
+        width: 80%;
+        justify-self: end;
         display: none;
+        position: fixed;
+    }
+
+    .mob-nav__item-list{
+        height: 20%;
+        list-style: none;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 60%;
     }
 
     .modal {
