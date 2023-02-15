@@ -9,7 +9,7 @@ main {
     grid-row: 2/-1;
     display: grid;
     grid-template-rows: 100%;
-    grid-gap: 1.5rem;
+    grid-gap:50%;
     font-size: 1.5rem;
 }
 

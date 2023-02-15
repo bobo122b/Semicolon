@@ -83,7 +83,7 @@ body {
         display: grid;
         grid-template-columns: 10% 80% 10%;
         grid-template-rows: 5rem 55vh;
-        width: 100vw;
+        width: 95vw;
     }
 
     .main-nav__item-list {
