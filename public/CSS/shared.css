@@ -29,8 +29,10 @@
   box-sizing: border-box;
 }
 
-html {
+@media (max-width: 40rem) {
+  html {
     overflow-x: hidden;
+  }
 }
 
 body {
