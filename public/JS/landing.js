@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
 });
 
 const appearOptions = {
-    threshold: 0,
+    threshold: 0.2,
     rootMargin: "800px 0px 0px 0px"
 };
 
