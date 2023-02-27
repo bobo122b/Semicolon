@@ -20,12 +20,12 @@ main {
 
 .main__img {
     width: 100%;
+    margin-top: 8rem;
 }
 
 .fade-in {
     opacity: 0;
     transition: 0.9s ease-in;
-    margin-top: 10rem;
 }
 
 .fade-in.appear {
@@ -59,7 +59,8 @@ main {
         grid-template-columns: 45% 45%;
         gap: 5%;
         justify-content: center;
-        grid-template-rows: auto;
+        align-items: center;
+        grid-template-rows: 100vh;
     }
 
     .landing-logo {
@@ -75,6 +76,8 @@ main {
         max-height: 300px;
         max-width: 600px;
         justify-self: flex-end;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .main__img.from-right {
