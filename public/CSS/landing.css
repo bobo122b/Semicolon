@@ -50,6 +50,10 @@ main {
     transform: translateX(0);
 }
 
+.desktop-grid {
+    display: none;
+}
+
 @media (min-width: 40rem) {
     main {
         width: 100%;
@@ -80,12 +84,17 @@ main {
         margin-bottom: auto;
     }
 
-    .main__img.from-right {
-        grid-column: 2/3;
-        justify-self: flex-start;
+    .more__grid {
+        grid-column: 1/-1;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 45% 45%;
+        gap: 5%;
+        
     }
 
-    p.from-left {
-        grid-row: 3/4;
+    .mob-grid {
+        display: none;
     }
 }
