@@ -6,6 +6,10 @@
     --Edges-color: #E4E5E4;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -22,6 +26,8 @@ body {
     width: 100%;
     display: flex;
     position: fixed;
+    top: 0;
+    left: 0;
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
